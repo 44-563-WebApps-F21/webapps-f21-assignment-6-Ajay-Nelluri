@@ -66,48 +66,46 @@
         <p id="result">This text will be replaced </p>
     </div>
 
-    
+    <script>
 
-<script>
 
-   
-let my_car = {}
+        let my_car = {}
 
-            function orderCar() {
+        function orderCar() {
 
-                my_car = {}
+            my_car = {}
 
-                value1 = document.getElementById("cb1_electric").checked
+            value1 = document.getElementById("cb1_electric").checked
 
-                value2 = document.getElementById("cb1_ac").checked
+            value2 = document.getElementById("cb1_ac").checked
 
-                value3 = document.getElementById("cb1_gps").checked
+            value3 = document.getElementById("cb1_gps").checked
 
-                out = document.getElementById("result")
+            out = document.getElementById("result")
 
 
 
-                my_car = { electric: value1, ac: value2, gps: value3 }
+            my_car = { electric: value1, ac: value2, gps: value3 }
 
-                console.log(my_car)
+            console.log(my_car)
 
-                out.innerHTML = JSON.stringify(my_car)
+            out.innerHTML = JSON.stringify(my_car)
 
-            }
+        }
 
-            function updateCar() {
+        function updateCar() {
 
-property_name = document.getElementById("property_name").value
+            property_name = document.getElementById("property_name").value
 
-property_value = document.getElementById("property_value").value
+            property_value = document.getElementById("property_value").value
 
-my_car[property_name] = property_value
+            my_car[property_name] = property_value
 
-document.getElementById("result").innerHTML = JSON.stringify(my_car)
+            document.getElementById("result").innerHTML = JSON.stringify(my_car)
 
-}
+        }
 
-</script>
+    </script>
 
 </body>
 </html> 
