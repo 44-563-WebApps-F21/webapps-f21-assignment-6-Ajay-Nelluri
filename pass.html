@@ -41,7 +41,31 @@
             out.innerHTML = "Wrong:" +wrong
         }
     }
+
+    let usingImage = 1
+        function newImage() {
+            switch (usingImage) {
+                case 1:
+                    document.getElementById("Images").src = "Images/Eagle.jpg"
+                    usingImage++;
+                    break;
+                case 2:
+                    document.getElementById("Images").src = "Images/Liger.jpg"
+                    usingImage++;
+                    break;
+                default:
+                    usingImage = 1;
+                    document.getElementById("Images").src = "Images/Reindeer.jpg"
+                    break;
+            }
+        }
+
     </script>
+
+        <div class="container">
+        <h2>Images</h2>
+        <img src="Images/Eagle.jpg" id="Images" alt="Eagle" height="200" width="200" onclick="newImage()">
+        </div>
 
     </body>
 </html>
