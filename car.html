@@ -71,7 +71,29 @@
 <script>
 
    
+let my_car = {}
 
+            function orderCar() {
+
+                my_car = {}
+
+                value1 = document.getElementById("cb1_electric").checked
+
+                value2 = document.getElementById("cb1_ac").checked
+
+                value3 = document.getElementById("cb1_gps").checked
+
+                out = document.getElementById("result")
+
+
+
+                my_car = { electric: value1, ac: value2, gps: value3 }
+
+                console.log(my_car)
+
+                out.innerHTML = JSON.stringify(my_car)
+
+            }
 
 </script>
 
