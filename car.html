@@ -40,6 +40,31 @@
                 <label class="form-check-label" for="cb1_gps">Gps</label></br>
             </div>
 
+            <br>
+
+            <input class="btn-primary" type="button" onclick="orderCar()" value="Order a car">
+        </form><br>
+
+        <form>
+            <div class="form-group">
+
+                <b><label for="property_name">Enter a property </label></b>
+                <input class="form-control" type="text" id="property_name" name="property_name" value="color"> <br>
+            </div>
+
+            <div class="form-group">
+
+                <b><label for="property_value">Enter a value </label></b>
+                <input class="form-control" type="text" id="property_value" name="property_value"> <br>
+            </div>
+
+            <input class="btn-primary"  type="button" onclick="updateCar()" value="Update the car">
+        </form>
+        <br>
+
+        <p id="result">This text will be replaced </p>
+    </div>
+
     
 
 <script>
