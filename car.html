@@ -40,8 +40,7 @@
                 <label class="form-check-label" for="cb1_gps">Gps</label></br>
             </div>
 
-            <br>
-
+           
             <input class="btn-primary" type="button" onclick="orderCar()" value="Order a car">
         </form><br>
 
@@ -56,7 +55,7 @@
 
             <div class="form-group">
 
-                <b><label for="property_value">Enter a value </label></b>
+                <label for="property_value">Enter a value </label>
                 <input class="form-control" type="text" id="property_value" name="property_value"> <br>
             </div>
 
@@ -71,38 +70,8 @@
 
 <script>
 
-function updateCar() {
-            var pa = document.getElementById("form1_prop").value;
-            var sa = document.getElementById("form1_propValue").value;
-            my_car[pa] = sa;
-            res.innerHTML = "my_car[]=  " + JSON.stringify(my_car);
-        }
+   
 
-var my_car = {};
-out = document.getElementById("result")
-
-function orderCar() {
-            var my_car = {}
-            if (document.getElementById("electric").checked) {
-                my_car.electric = 'true';
-            } else {
-                my_car.electric = 'false';
-            }
-            result.innerHTML = "electric: " + my_car.electric;
-            if (document.getElementById("ac").checked) {
-                my_car.ac = 'true';
-            } else {
-                my_car.ac = 'false';
-            }
-            result.innerHTML = result.innerHTML + "\n" + "ac: " + my_car.ac;
-            if (document.getElementById("gps").checked) {
-                my_car.gps = 'true';
-            } else {
-                my_car.gps = 'false';
-            }
-            result.innerHTML = result.innerHTML + "\n" + "gps: " + my_car.gps;
-        }
-        out = document.getElementById("result");
 
 </script>
 
